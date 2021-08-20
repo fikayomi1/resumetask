@@ -377,10 +377,11 @@ button:hover
        flex-direction: column;
        height: max-content;
        padding-left: 27%;
+       width: max-content;
        
    }
    .qual-1, .qual-2, .qual-3{
-       width: 50%;
+       width: max-content;
        
    }
    .qual-1{
@@ -393,6 +394,7 @@ button:hover
    }
    .contact-us input{
        margin-left: -40px;  
+
    }
    button{
        margin-left: 20px;
