@@ -9,14 +9,12 @@
     font-family: Garamond;
     width: 100%;
     opacity: 0.9;
-    background-position: center;
-    background-size: contain;
-    object-fit: contain;
+    background-size: 90%;
     background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("images/68.png") no-repeat;
     
     
 }
-.fa-fa-bars
+.check
 {
     width: 150px;
     height: 200px;
@@ -51,7 +49,7 @@ nav
 {
     color: black;
     background-color: #fff;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     width: 100%;
     padding-top: 11px;
@@ -106,13 +104,11 @@ nav
 }
 .about-me
 {
-    height: 400px;
     display: flex;
     padding: 100px 85px;
     background-color: #fff;
     flex-direction: row;
-    border-radius: 5px;
-    margin:0 auto;  
+    border-radius: 5px; 
     box-shadow: 2px 4px 4px 4px grey;
 }
 .about-me-text
@@ -139,17 +135,18 @@ var
     width: 100%;
     text-align: center;
     display: flex;
-    margin: 0 auto;
-    padding-left: 70px;
+    padding-left: 2%;
 }
 .header
 {
     /* margin-top: 120px; */
     color:#1d252f;
-    width: 150px;
-    margin: 70px auto 0 auto;
-    text-align: center;
-    border-bottom: 2.5px solid #1d252f;
+    width: 25%;
+    margin-left: 39%;
+    padding-left: 8%;
+    padding-top: 7%;
+    border-bottom: 1.5px solid #1d252f;
+    border-bottom-width: thin;
     /* border: 1.5px solid #1d252f;  */
  
 }
@@ -307,11 +304,11 @@ var
 .contact-us input
 {
     margin:  10px auto;
-    width: 48%;
     border: 1px solid #19222d;
     border-radius: 4px;
     color:#1b222c;
     padding: 15px 20px;
+    padding-right: 230px
 }
 button
 {
@@ -323,7 +320,8 @@ button
     height: 60px;
     font-family: Garamond;
     font-size: 17px;
-    margin: 30px 45px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 button:hover
 {
@@ -335,82 +333,196 @@ button:hover
 {
     background-color: #19222d;
     color: #fff;
+    padding-top: 3%;
+    padding-left: 35%;
+    padding-bottom: 2%;
+    
 }
 .footer h3
 {
     font-weight: bolder;
     font-size:x-large;
 }
- @media only screen and (max-width:767px)
+
+@media only screen and (max-width:992px) /*when desktop view is resized; */
 {
-    .container{
-        display: none;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    nav{
-        position:absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        color:white;
-        background-color:brown;      
-    }
-    ul{
-        float:left;
-        text-align: center;
-        position:absolute;
-        top: 50px;
-        left: -340px;
-    }
-    a{
-        color: white;
-        text-align : center;
-    }
-    li{ 
-        display:flex;
-        flex-direction: row;
-    }
-}
-@media only screen and (max-width:867px)
-{
-   .home{ height: 250px;
-    width:fit-content;
+   .home{ 
+    height:fit-content;
+    width: max-content;
+    padding-top: 5%;
+    padding-right: 22%;
+    padding-left: 12%;
+    /* padding-left: 280px;
+    padding-bottom: 0; */
+   }
+   .heading{
+       max-width: 100%;
+       height: auto
    }
    .about-me{
        display: flex;
        flex-direction: column;
-       width: fit-content;
+       
+
+   }
+   .about-me-text{
+       margin-top: 20px;
        height: fit-content;
+       width: max-content;
+       padding-right: 12%;
+       padding-left: 32%;
    }
    .resume{
        display: flex;
        flex-direction: column;
-       width: fit-content;
-       height: fit-content;
+       height: max-content;
+       padding-left: 27%;
+       
+   }
+   .qual-1, .qual-2, .qual-3{
+       width: 50%;
+       
+   }
+   .qual-1{
+       margin-top: 30px;
    }
    .contact-us{
-       width: fit-content;
+       width: max-content;
        height: fit-content;
-      
+       padding-left: 10%;
    }
    .contact-us input{
-       width: fit-content;
-       height: fit-content;
+       margin-left: -40px;  
    }
    button{
-    
+       margin-left: 20px;
+       margin-top: 30px;
    }
-   .footer h3, .pin, .footer p{
-       text-align: center;
-
+   
+   .footer{
+       width: max-content;
+       height: fit-content;
+       width: 100%;
+       padding-left: 25%;
    }
    
 
-}
+} 
+
+/* @media only screen and(max-width: 450px)
+{
+    .home{
+        height: max-content;
+        padding-top: 20px;
+    }
+    .about-me{
+        width: max-content;
+    }
+    .about-me-text{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .resume{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        height: max-content;
+    }
+    .qual-1, .qual-2, .qual-3{
+        width: 20px;
+        
+    }
+    .qual-1{
+        margin-top: 30px;
+    }
+} */
 
 
+
+
+  @media only screen and (max-width: 650px) {
+    .logo{
+        font-size: 16px;
+    }
+    .logo{
+        padding-top: 5px;
+    }
+    ul{
+        display: none;
+    }
+    .home{ 
+        height:fit-content;
+        width: max-content;
+        padding-top: 5%;
+        padding-right: 22%;
+        padding-left: 12%;
+        border: 2px solid black;
+    
+    }
+    .nav-bar{
+        width: max-content;
+    }
+    .heading{
+           max-width: 100%;
+           height: auto
+   }
+    .about-me{
+           display: flex;
+           flex-direction: column;
+           width: fit-content;
+           border: 2px solid rgb(15, 15, 15);
+
+           
+    
+   }
+    .about-me-text{
+           margin-top: 20px;
+           height: fit-content;
+           width: max-content;
+           padding-left: 32%;
+       }
+    .resume{
+           display: flex;
+           flex-direction: column;
+           height: max-content;
+           padding-left: 27%;
+           border: 2px solid black;
+           
+   }
+    .qual-1, .qual-2, .qual-3{
+           width: 50%;
+           
+    }
+    .qual-1{
+           margin-top: 30px;
+    }
+    .contact-us{
+           width: max-content;
+           height: fit-content;
+           padding-left: 10%;
+           border: 2px solid black;
+    }
+    .contact-us input{
+           margin-left: -40px;  
+    }
+    button{
+           margin-left: 20px;
+           margin-top: 30px;
+    }   
+    .footer{
+           width: max-content;
+           height: fit-content;
+           width: 100%;
+           border: 2px solid black;
+           padding-left: 25%;
+    }
+       
+}    
+    
+    
 
