@@ -304,7 +304,6 @@ var
 .contact-us input
 {
     margin:  10px auto;
-    border: 1px solid #19222d;
     border-radius: 4px;
     color:#1b222c;
     padding: 15px 20px;
@@ -502,7 +501,6 @@ button:hover
            width: max-content;
            height: fit-content;
            padding-left: 10%;
-           border: 2px solid black;
     }
     .contact-us input{
            margin-left: -40px;  
