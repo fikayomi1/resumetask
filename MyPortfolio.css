@@ -475,10 +475,7 @@ button:hover
     .about-me{
            display: flex;
            flex-direction: column;
-           width: fit-content;
-
-           
-    
+           width: max-content;
    }
     .about-me-text{
            margin-top: 20px;
@@ -489,13 +486,14 @@ button:hover
     .resume{
            display: flex;
            flex-direction: column;
+           width: max-content;
            height: max-content;
            padding-left: 27%;
            border: 2px solid black;
            
    }
     .qual-1, .qual-2, .qual-3{
-           width: 50%;
+           width: max-content;
            
     }
     .qual-1{
