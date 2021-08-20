@@ -1,0 +1,416 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body
+ {
+    font-family: Garamond;
+    width: 100%;
+    opacity: 0.9;
+    background-position: center;
+    background-size: contain;
+    object-fit: contain;
+    background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("../Images/68.png") no-repeat;
+    
+    
+}
+.fa-fa-bars
+{
+    width: 150px;
+    height: 200px;
+    color: black;
+    display: hidden;
+    margin-left: 150px;
+}
+a
+{  
+    margin: 0 8px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+.logo
+{
+    padding-left: 50px;
+     
+}
+nav ul
+{
+    position: absolute;
+    right: 55px;
+    padding-top: 5px;
+}
+nav
+{
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    display: flex;
+    width: 100%;
+    padding-top: 11px;
+    height: 45px;
+    position:absolute;
+    top: 0;
+    position: fixed;
+    box-shadow: 4px 2px 4px grey; 
+}
+
+/* Learn how to make navigation bar fixed*/
+.container
+{
+    display: flex;
+    margin-top: 47px;
+    flex-direction: column; 
+}
+.home{
+    height: 400px;
+    padding: 140px 320px;
+    padding-right: 400px;
+    padding-left: 190px;
+    color: #1d252f;
+
+    
+    /* background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("../Images/68.png") no-repeat; */
+   
+}
+.home h1
+{
+    padding-bottom: 10px;
+}
+.image
+{
+    width: 220px;
+    height: 230px;
+    box-shadow:  5px 6px  #1b222c;
+}
+.about-me-image
+{
+    text-align: center;
+}
+.about-me-image h4
+{
+    margin-top: 10px;
+}
+.heading
+{
+    margin-bottom: 15px;
+    /* text-align: center; */
+    color: #19222d;
+}
+.about-me
+{
+    height: 400px;
+    display: flex;
+    padding: 100px 85px;
+    background-color: #fff;
+    flex-direction: row;
+    border-radius: 5px;
+    margin:0 auto;  
+    box-shadow: 2px 4px 4px 4px grey;
+}
+.about-me-text
+{
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 150px;
+    font-size: large;
+}
+var
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.about-me-text p
+{
+    margin: 3px;
+    
+}
+.resume
+{
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 70px;
+}
+.header
+{
+    /* margin-top: 120px; */
+    color:#1d252f;
+    width: 150px;
+    margin: 70px auto 0 auto;
+    text-align: center;
+    border-bottom: 2.5px solid #1d252f;
+    /* border: 1.5px solid #1d252f;  */
+ 
+}
+.qual-1,.qual-2, .qual-3
+{
+    width: 33.3%;
+    height: 290px;
+    margin: 40px 45px;
+    background-color:#1b222c;
+    box-shadow: 2px 4px 4px 2px grey; 
+    border: 1px solid black; 
+    border-radius: 10px;
+}
+.resume h1
+{
+    background-color:#fff;
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    color: #1d252f;
+    border-radius:15px;
+}
+
+.resume p,.resume li, .resume h2
+{
+    color: #fff;
+}
+.resume li
+{
+    margin: 9px;
+    list-style-type: none;
+    font-family: Cambria;
+ 
+}
+.duration
+{
+    margin-bottom: 20px; 
+}
+.resume li::before
+{
+    content: "~ ";
+}
+.present
+{
+    font-style:italic;
+    font-weight: lighter;
+    font-size: 20px;   
+}
+.skill-set
+{
+    margin: 30px auto;
+    width: 50%;
+    
+}
+.bar
+{
+    margin-top: 13px;
+    display: block;
+    height: 6px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #bec4ce;
+    margin-bottom: 40px;
+/* 90 80 50 20 */
+
+}
+
+.bar span
+{
+    float: left;
+    border-radius: 5px;
+    height: 4px;
+    background-color: #1d252e;
+}
+.html,.css,.jscript,.react
+{
+    margin-top: 1.5px;
+    height: 4px;
+
+}
+.html
+{
+    width: 90%;
+    animation-name: html;
+    animation-duration: 2s;
+}
+
+@keyframes html
+{
+    0%{ 
+        width: 0;
+    }
+    100%{
+        width: 90%
+    } 
+    
+}
+.css
+{
+    width: 90%;
+    animation-name: css;
+    animation-duration: 2s;
+}
+@keyframes css
+{
+    0%{ 
+        width: 0;
+    }
+    100%{
+        width: 90%
+    } 
+    
+}
+.jscript
+{
+    width: 50%;
+    animation-name: jscript;
+    animation-duration: 2s;
+}
+@keyframes jscript
+{
+    0%{ 
+        width: 0;
+    }
+    100%{
+        width: 50%
+    } 
+    
+}
+.react
+{
+    width: 20%;
+    animation-name: react;
+    animation-duration: 2s;
+}
+@keyframes react
+{
+    0%{ 
+        width: 0;
+    }
+    100%{
+        width: 20%
+    } 
+    
+}
+.contact-us
+{
+    margin: 40px auto;
+    padding-left: 33.3%;
+    width: 100%;
+    
+}
+.contact-us input
+{
+    margin:  10px auto;
+    width: 48%;
+    border: 1px solid #19222d;
+    border-radius: 4px;
+    color:#1b222c;
+    padding: 15px 20px;
+}
+button
+{
+    background-color: #19222d;
+    color:#fff;
+    border-radius: 45px;
+    border: transparent;
+    width: 300px;
+    height: 60px;
+    font-family: Garamond;
+    font-size: 17px;
+    margin: 30px 45px;
+}
+button:hover
+{
+    color: #1d252e;
+    background-color: #8a9eb6;
+    font-weight: bold;
+}
+.footer
+{
+    background-color: #19222d;
+    color: #fff;
+}
+.footer h3
+{
+    font-weight: bolder;
+    font-size:x-large;
+}
+ @media only screen and (max-width:767px)
+{
+    .container{
+        display: none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        color:white;
+        background-color:brown;      
+    }
+    ul{
+        float:left;
+        text-align: center;
+        position:absolute;
+        top: 50px;
+        left: -340px;
+    }
+    a{
+        color: white;
+        text-align : center;
+    }
+    li{ 
+        display:flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width:867px)
+{
+   .home{ height: 250px;
+    width:fit-content;
+   }
+   .about-me{
+       display: flex;
+       flex-direction: column;
+       width: fit-content;
+       height: fit-content;
+   }
+   .resume{
+       display: flex;
+       flex-direction: column;
+       width: fit-content;
+       height: fit-content;
+   }
+   .contact-us{
+       width: fit-content;
+       height: fit-content;
+      
+   }
+   .contact-us input{
+       width: fit-content;
+       height: fit-content;
+   }
+   button{
+    
+   }
+   .footer h3, .pin, .footer p{
+       text-align: center;
+
+   }
+   
+
+}
+
+
+
