@@ -360,8 +360,8 @@ button:hover
     padding-bottom: 0; */
    }
    .nav-bar a img{
-    width: 10px;
-    height: 15px;
+    width: 5px;
+    height: 8px;
 
 }
    .heading{
@@ -462,6 +462,11 @@ button:hover
     }
     .logo{
         padding-top: 5px;
+    }
+    .nav-bar a img{
+        width: 5px;
+        height: 8px;
+    
     }
     ul{
         display: none;
