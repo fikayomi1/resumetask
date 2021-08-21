@@ -22,6 +22,11 @@
     display: hidden;
     margin-left: 150px;
 }
+.nav-bar a img{
+    width: 30px;
+    height: 25px;
+
+}
 a
 {  
     margin: 0 8px;
