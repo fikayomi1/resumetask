@@ -359,6 +359,11 @@ button:hover
     /* padding-left: 280px;
     padding-bottom: 0; */
    }
+   .nav-bar a img{
+    width: 10px;
+    height: 15px;
+
+}
    .heading{
        max-width: 100%;
        height: auto
