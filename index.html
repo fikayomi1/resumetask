@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="MyPortfolio.css">
 </head>
 <body>
 
     <div class="nav-bar">
-    <nav>
+        <div class="title">
         <h1 class="logo">David X</h1>
-        <a href="www.training.zuri.team"><img src="images/zuri.png" alt=""></a>
+        <a href="www.training.zuri.team"><img src="images/zuri.png" alt=""></a> 
         <a href="www.internship.zuri.team"><img src="images/i4g.png" alt=""></a>
         <a href="www.zuri.team"><img src="images/hng.png" alt=""></a>
+        </div>
+        <div class="lists">
         <ul>
             <li><a href="#home1">Home</a></li>
             <li><a href="#about1">About</a></li>
@@ -23,25 +26,27 @@
             <li><a href="#skills1">Skills</a></li>
             <li><a href="#contact1">Contact</a></li>
         </ul>
-        <label for="check">
-            <i class="fa-fa-bars"  aria-hidden="true"></i>
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"  aria-hidden="true"></i>
         </label>
-        
-    </nav>
+        </div>
     </div>
+
     <div class="container"> 
         <span id="home1"></span>
         <div class="home">
             <h1>Hello There,</h1>
             <p>My name is <var>Olaoluwa</var></p> <br>
-             <p>I am a Frontend Developer currently in Stage Two of The HNGB Inrenship.<p>
+             <p>I am a Frontend Developer currently in Stage Two of The HNGB Internship.<p>
         </div>
 
         <span id="about1"></span>
         <div class="about-me">
             <div class="about-me-image">
             <img src="images/Profile.jpg" class= "image" alt="">
-            <h4>Frontend Developer</h4></div>
+            <h4>Frontend Developer</h4>
+            </div>
 
             <div class="about-me-text">
             <h2 class ="heading">About Me</h2>

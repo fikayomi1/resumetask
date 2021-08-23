@@ -14,113 +14,124 @@
     
     
 }
-.check
-{
-    width: 150px;
-    height: 200px;
-    color: black;
-    display: hidden;
-    margin-left: 150px;
-}
-.nav-bar a img{
-    width: 30px;
-    height: 25px;
-
-}
-a
-{  
-    margin: 0 8px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav li
-{
-    list-style-type: none;
-    display: inline-block;
-}
-.logo
-{
-    padding-left: 50px;
-     
-}
-nav ul
-{
-    position: absolute;
-    right: 55px;
-    padding-top: 5px;
-}
-nav
-{
-    color: black;
-    background-color: #fff;
-    border-bottom: 2px solid black;
+/* Header styles */
+.nav-bar{
     display: flex;
+    flex-direction: row;
     width: 100%;
-    padding-top: 11px;
-    height: 45px;
-    position:absolute;
-    top: 0;
     position: fixed;
-    box-shadow: 4px 2px 4px grey; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 3px 3px grey;
+    /* border: 2px solid black; */
+
+}
+.title{
+    display: flex;
+    margin-top: 2%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.logo{
+    margin-right: 6%;
+    margin: 1%;
+}
+.title img{
+    width: 40px;
+    border-radius: 5px;
+    height: 35px;
+}
+.title a{
+    margin: 1%;
 }
 
-/* Learn how to make navigation bar fixed*/
+.lists{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    margin-top: 1.5%;
+}
+.checkbtn{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.lists ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+.lists li{
+    padding: 3% 5%;
+    list-style-type: none;
+}
+.lists a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+/*End of header styles*/
+
+
+/*container-styles*/
 .container
 {
     display: flex;
-    margin-top: 47px;
+    margin-top: -1%;
     flex-direction: column; 
 }
 .home{
-    height: 400px;
-    padding: 140px 320px;
-    padding-right: 400px;
-    padding-left: 190px;
+    padding: 13% 20%;
     color: #1d252f;
-
-    
     /* background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("../Images/68.png") no-repeat; */
-   
 }
 .home h1
 {
-    padding-bottom: 10px;
-}
-.image
-{
-    width: 220px;
-    height: 230px;
-    box-shadow:  5px 6px  #1b222c;
-}
-.about-me-image
-{
-    text-align: center;
-}
-.about-me-image h4
-{
-    margin-top: 10px;
-}
-.heading
-{
-    margin-bottom: 15px;
-    /* text-align: center; */
-    color: #19222d;
+    padding-bottom: 1%;
 }
 .about-me
 {
     display: flex;
-    padding: 100px 85px;
+    padding: 7% auto;
     background-color: #fff;
     flex-direction: row;
+    /* border: 2px solid black; */
     border-radius: 5px; 
     box-shadow: 2px 4px 4px 4px grey;
 }
+.about-me-image{
+    /* border: 2px solid black; */
+    padding: 5% 5%;
+    width: 50%;
+    
+}
+.about-me h4{
+    margin-top: 3%;
+    font-size: 1.5rem;
+}
+.image
+{
+    width: 50%;
+    
+    height: 90%;
+    box-shadow:  5px 6px  #1b222c;
+}
+
+.heading
+{
+    margin-bottom: 3%;
+    /* text-align: center; */
+    color: #19222d;
+}
+
 .about-me-text
 {
-    padding-top: 30px;
-    padding-left: 200px;
-    padding-right: 150px;
+    width: 50%;
+    padding: 4% 0;
+    /* border: 2px solid black; */
     font-size: large;
 }
 var
@@ -131,16 +142,8 @@ var
 
 .about-me-text p
 {
-    margin: 3px;
+    margin: 1%;
     
-}
-.resume
-{
-    height: 350px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    padding-left: 2%;
 }
 .header
 {
@@ -155,11 +158,20 @@ var
     /* border: 1.5px solid #1d252f;  */
  
 }
+.resume
+{
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
 .qual-1,.qual-2, .qual-3
 {
-    width: 33.3%;
-    height: 290px;
-    margin: 40px 45px;
+    width: 26%;
+    padding-bottom: 5%;
     background-color:#1b222c;
     box-shadow: 2px 4px 4px 2px grey; 
     border: 1px solid black; 
@@ -183,14 +195,14 @@ var
 }
 .resume li
 {
-    margin: 9px;
+    margin: 5%;
     list-style-type: none;
-    font-family: Cambria;
+    font-size: 1.2rem;
  
 }
 .duration
 {
-    margin-bottom: 20px; 
+    margin-bottom: 2%; 
 }
 .resume li::before
 {
@@ -204,9 +216,8 @@ var
 }
 .skill-set
 {
-    margin: 30px auto;
-    width: 50%;
     
+    padding: 4% 15%;  
 }
 .bar
 {
@@ -301,18 +312,19 @@ var
 }
 .contact-us
 {
-    margin: 40px auto;
-    padding-left: 33.3%;
+    margin: 1% 0;
+    /* border: 2px solid red; */
+    padding: 2% 35%;
     width: 100%;
-    
 }
 .contact-us input
 {
-    margin:  10px auto;
-    border-radius: 4px;
+    margin:  3%;
+    border-radius: 5px;
     color:#1b222c;
-    padding: 15px 20px;
-    padding-right: 230px
+    padding: 3% 8%;
+    padding-right: 50%;
+    
 }
 button
 {
@@ -320,12 +332,12 @@ button
     color:#fff;
     border-radius: 45px;
     border: transparent;
-    width: 300px;
-    height: 60px;
+    padding: 5% 0;
+    width: 75%;
+    font-size: 1.1rem;
     font-family: Garamond;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-left: 60px;
+    font-weight: bold;
+    margin: 5% 15%;
 }
 button:hover
 {
@@ -337,9 +349,8 @@ button:hover
 {
     background-color: #19222d;
     color: #fff;
-    padding-top: 3%;
-    padding-left: 35%;
-    padding-bottom: 2%;
+    padding: 3% 31%;
+    /* border: 2px solid yellow; */
     
 }
 .footer h3
@@ -348,190 +359,93 @@ button:hover
     font-size:x-large;
 }
 
-@media only screen and (max-width:992px) /*when desktop view is resized; */
+/*
+ We are done with normal styling, 
+Now let's go responsive!!!! 
+*/
+
+
+/* End-of-container-styles */
+
+/* Media Queries  992px */
+@media only screen and (max-width:900px) /*when desktop view is resized; */
 {
-   .home{ 
-    height:fit-content;
-    width: max-content;
-    padding-top: 5%;
-    padding-right: 22%;
-    padding-left: 12%;
-    /* padding-left: 280px;
-    padding-bottom: 0; */
-   }
-   .nav-bar a img{
-    width: 5px;
-    height: 8px;
+   
+   .nav-bar img{
+    width: 35px;
+    height: 30px;
 
 }
-   .heading{
-       max-width: 100%;
-       height: auto
+    .lists ul{
+        margin-right: 1%;
+
    }
    .about-me{
        display: flex;
        flex-direction: column;
-       
 
    }
+   .about-me-image{
+       /* border: 2px solid black; */
+       width: 100%;
+       padding-left: 35%;
+       padding-bottom: 10%;
+   }
    .about-me-text{
-       margin-top: 20px;
-       height: fit-content;
-       width: max-content;
-       padding-right: 12%;
-       padding-left: 32%;
+       width: 100%;
+       padding-left: 35%;
+       /* border: 2px solid black; */
    }
    .resume{
        display: flex;
        flex-direction: column;
-       height: max-content;
-       padding-left: 27%;
-       width: max-content;
+       align-content: center;
+       width: 100%;
        
    }
    .qual-1, .qual-2, .qual-3{
-       width: max-content;
+       margin: 2% 31%;
+       width: 45%;
        
    }
-   .qual-1{
-       margin-top: 30px;
-   }
-   .contact-us{
-       width: max-content;
-       height: fit-content;
-       padding-left: 10%;
-   }
-   .contact-us input{
-       margin-left: -40px;  
-
-   }
-   button{
-       margin-left: 20px;
-       margin-top: 30px;
-   }
    
-   .footer{
-       width: max-content;
-       height: fit-content;
-       width: 100%;
-       padding-left: 25%;
-   }
-   
-
 } 
 
-/* @media only screen and(max-width: 450px)
-{
-    .home{
-        height: max-content;
-        padding-top: 20px;
-    }
-    .about-me{
-        width: max-content;
-    }
-    .about-me-text{
-        width: 100%;
-    }
-    ul{
-        display: none;
-    }
-    .container{
-        max-width: 100%;
-    }
-    .resume{
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-        height: max-content;
-    }
-    .qual-1, .qual-2, .qual-3{
-        width: 20px;
-        
-    }
-    .qual-1{
-        margin-top: 30px;
-    }
-} */
+@media only screen and (max-width: 815px){
+    .title{
+        width: 40%;
 
+    }
+    .lists{
+        width: 60%;
 
-
+    }
+    .lists ul{
+        margin-right: 3%;
+    }
+}
 
   @media only screen and (max-width: 650px) {
     .logo{
-        font-size: 16px;
+        margin-right: 5%;
+        font-size: 1.3rem;
     }
-    .logo{
-        padding-top: 5px;
+    .title{
+        padding-top: 1%;
+        width: 90%;
     }
     .nav-bar a img{
-        width: 5px;
-        height: 8px;
-    
+        width: 35px;
+        height: 29px;
     }
-    ul{
+    .lists{
         display: none;
-    }
-    .home{ 
-        height:fit-content;
-        width: max-content;
-        padding-top: 5%;
-        padding-right: 22%;
-        padding-left: 12%;
-    
-    }
-    .nav-bar{
-        width: max-content;
-    }
-    .heading{
-           max-width: 100%;
-           height: auto
-   }
-    .about-me{
-           display: flex;
-           flex-direction: column;
-           width: max-content;
-   }
-    .about-me-text{
-           margin-top: 20px;
-           height: fit-content;
-           width: max-content;
-           padding-left: 32%;
-       }
-    .resume{
-           display: flex;
-           flex-direction: column;
-           width: max-content;
-           height: max-content;
-           padding-left: 27%;
-           
-   }
-    .qual-1, .qual-2, .qual-3{
-           width: max-content;
-           
-    }
-    .qual-1{
-           margin-top: 30px;
+        width: 10%;
     }
     .contact-us{
-           width: max-content;
-           height: fit-content;
-           padding-left: 10%;
+         padding-left: 25%;
     }
-    .contact-us input{
-           margin-left: -40px;  
-    }
-    button{
-           margin-left: 20px;
-           margin-top: 30px;
-    }   
-    .footer{
-           width: max-content;
-           height: fit-content;
-           width: 100%;
-           padding-left: 25%;
-    }
-       
-}    
-    
-    
+     
+
+  }    
 
