@@ -31,35 +31,42 @@
     display: flex;
     margin-top: 2%;
     width: 50%;
+    justify-content: space-between;
     /* border: 2px solid red; */
 }
 .logo{
     margin-right: 6%;
     margin: 1%;
 }
-.title img{
+.footer img{
     width: 40px;
+    margin-top: 1%;
     border-radius: 5px;
     height: 35px;
 }
 .title a{
     margin: 1%;
 }
-
+.fas{
+    color: black;
+    display: none;
+    margin-right: 100%;
+    border: 2px solid black;
+    
+}
 .lists{
     /* border: 2px solid red; */
     width: 50%;
     display: flex;
     margin-top: 1.5%;
 }
-.checkbtn{
-    display: none;
+.bar-logo{
+    display: flex;
 }
 #check{
-    color: black;
-    font-size: 25px;
-    cursor: pointer;
     display: none;
+    width: 20px;
+    cursor: pointer;
 }
 .lists ul{
     display: flex;
@@ -374,7 +381,7 @@ Now let's go responsive!!!!
 @media only screen and (max-width:900px) /*when desktop view is resized; */
 {
    
-   .nav-bar img{
+   .footer img{
     width: 35px;
     height: 30px;
 
@@ -431,17 +438,33 @@ Now let's go responsive!!!!
   @media only screen and (max-width: 650px) {
     .logo{
         margin-right: 5%;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+        color: white;
     }
     .title{
-        padding-top: 2%;
+        padding-top: 3%;
         margin-top: 1%;
         width: 100%;
         height: 10vh;
-        background-color: blue;
-        border: 2px solid red;
+        background-color: #19222d;
+        box-shadow: 2px 4px 4px black;
     }
-    .nav-bar a img{
+    #check{
+        display: block;
+    }
+    .fas{
+        display: block;
+        color: black;
+        margin-right: 4%;
+        margin-top: 2%;
+        padding-bottom: 2%;
+        
+        background-color: white;
+    }
+    #check:checked~ul{
+        display: none;
+    }
+    .footer img{
         width: 35px;
         height: 29px;
     }
@@ -452,30 +475,31 @@ Now let's go responsive!!!!
         height: 100vh;
     }
     .lists{
-        
-        border: 2px solid red;
-        height: 90vh;
+        height: 95vh;
         margin-top: 0%;
         width: 100%;
-        background-color: green;
+        color: white;
+        background-color: #081320;
     }
     .lists ul{
         display: block;
         margin: 0 auto;
+        height: 75vh;
         width: 100%;
+        transition: 4s ease;
         
     }
+    .lists a{
+        color: #fff;
+    
+    }
     .lists li{
-        margin: 50%;
-        background-color: #fff;
-        
-
+        margin: 5% 40%;
     }
     .contact-us{
          padding-left: 25%;
     }
-     
-
+    
   }    
   /* @media only screen and (max-width: 650px) {
     .logo{
