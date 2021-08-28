@@ -8,11 +8,8 @@
  {
     font-family: Garamond;
     width: 100%;
-    opacity: 0.9;
-    background-size: 90%;
-    background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("images/68.png") no-repeat;
-    
-    
+    opacity: 1;
+    background-color:#c4ceda;
 }
 /* Header styles */
 .nav-bar{
@@ -24,7 +21,7 @@
     align-items: center;
     background-color: #fff;
     box-shadow: 2px 3px 3px grey;
-    /* border: 2px solid black; */
+    
 
 }
 .title{
@@ -47,25 +44,23 @@
 .title a{
     margin: 1%;
 }
-.fas{
-    color: black;
-    display: none;
-    margin-right: 100%;
-    border: 2px solid black;
-    
-}
 .lists{
     /* border: 2px solid red; */
     width: 50%;
+    /* display: none; */
     display: flex;
     margin-top: 1.5%;
 }
 .bar-logo{
     display: flex;
 }
+.bar-logo button{
+    width: 20px;
+    height: 25px;
+}
 #check{
     display: none;
-    width: 20px;
+    font-size: 50px;
     cursor: pointer;
 }
 .lists ul{
@@ -94,9 +89,9 @@
     flex-direction: column; 
 }
 .home{
+    width: 100%;
     padding: 13% 20%;
     color: #1d252f;
-    /* background: linear-gradient(rgba(216, 213, 213, 0.2), rgba(216, 213, 213, 0.8)), url("../Images/68.png") no-repeat; */
 }
 .home h1
 {
@@ -110,13 +105,13 @@
     flex-direction: row;
     /* border: 2px solid black; */
     border-radius: 5px; 
+    margin: 2.4%;
     box-shadow: 2px 4px 4px 4px grey;
 }
 .about-me-image{
     /* border: 2px solid black; */
     padding: 5% 5%;
-    width: 50%;
-    
+    width: 50%;   
 }
 .about-me h4{
     margin-top: 3%;
@@ -124,19 +119,16 @@
 }
 .image
 {
-    width: 50%;
-    
+    width: 50%;  
     height: 90%;
     box-shadow:  5px 6px  #1b222c;
 }
-
 .heading
 {
     margin-bottom: 3%;
     /* text-align: center; */
     color: #19222d;
 }
-
 .about-me-text
 {
     width: 50%;
@@ -149,7 +141,6 @@ var
     font-weight: bold;
     font-style: normal;
 }
-
 .about-me-text p
 {
     margin: 1%;
@@ -174,8 +165,7 @@ var
     margin-top: 2%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 }
 
 .qual-1,.qual-2, .qual-3
@@ -262,7 +252,7 @@ var
     animation-duration: 2s;
 }
 
-@keyframes html
+/* @keyframes html
 {
     0%{ 
         width: 0;
@@ -271,14 +261,14 @@ var
         width: 90%
     } 
     
-}
+} */
 .css
 {
     width: 90%;
     animation-name: css;
     animation-duration: 2s;
 }
-@keyframes css
+/* @keyframes css
 {
     0%{ 
         width: 0;
@@ -287,14 +277,14 @@ var
         width: 90%
     } 
     
-}
+} */
 .jscript
 {
     width: 50%;
     animation-name: jscript;
     animation-duration: 2s;
 }
-@keyframes jscript
+/* @keyframes jscript
 {
     0%{ 
         width: 0;
@@ -303,14 +293,14 @@ var
         width: 50%
     } 
     
-}
+} */
 .react
 {
     width: 20%;
     animation-name: react;
     animation-duration: 2s;
 }
-@keyframes react
+/* @keyframes react
 {
     0%{ 
         width: 0;
@@ -319,35 +309,40 @@ var
         width: 20%
     } 
     
-}
+} */
 .contact-us
 {
-    margin: 1% 0;
-    /* border: 2px solid red; */
-    padding: 2% 35%;
-    width: 100%;
+    
+    padding: 2% 0;
+    
+    padding-left: 35%;
+    
+    
 }
 .contact-us input
 {
-    margin:  3%;
+    width: 60%;
+    margin: 1%;
     border-radius: 5px;
-    color:#1b222c;
-    padding: 3% 8%;
-    padding-right: 50%;
+    padding: 1.5% 3%;
+    color:#6d6e70;
+    
+  
     
 }
 button
 {
     background-color: #19222d;
     color:#fff;
-    border-radius: 45px;
+    border-radius: 5px;
     border: transparent;
-    padding: 5% 0;
-    width: 75%;
+    padding: 2% 3%;
+    margin-top: 1%;
+    margin-left: 15%;
     font-size: 1.1rem;
     font-family: Garamond;
     font-weight: bold;
-    margin: 5% 15%;
+    
 }
 button:hover
 {
@@ -414,8 +409,8 @@ Now let's go responsive!!!!
        
    }
    .qual-1, .qual-2, .qual-3{
-       margin: 2% 31%;
-       width: 45%;
+       margin: 2% 20%;
+       width: 60%;
        
    }
    
@@ -433,74 +428,75 @@ Now let's go responsive!!!!
     .lists ul{
         margin-right: 3%;
     }
+    .contact-us{
+        padding-left: 20%;
+
+    }
+    .contact-us input{
+        width: 80%;
+    }
 }
 
   @media only screen and (max-width: 650px) {
-    .logo{
+    /* .logo{
         margin-right: 5%;
         font-size: 1.6rem;
         color: white;
-    }
-    .title{
+    } */
+    /* .title{
         padding-top: 3%;
         margin-top: 1%;
+        justify-content: space-between;
         width: 100%;
         height: 10vh;
-        background-color: #19222d;
+        background-color: #081320;
         box-shadow: 2px 4px 4px black;
     }
-    #check{
-        display: block;
-    }
-    .fas{
-        display: block;
-        color: black;
-        margin-right: 4%;
-        margin-top: 2%;
-        padding-bottom: 2%;
         
-        background-color: white;
-    }
-    #check:checked~ul{
-        display: none;
-    }
     .footer img{
         width: 35px;
         height: 29px;
-    }
-    .nav-bar{
+    } */
+    /* .nav-bar{
         display: flex;
         flex-direction: column;
         /* align-content: flex-start; */
-        height: 100vh;
-    }
-    .lists{
+        /*height: 100vh;
+    } */
+    /* .lists{
         height: 95vh;
         margin-top: 0%;
         width: 100%;
+        transition: 0.8s ease-in-out;
         color: white;
-        background-color: #081320;
-    }
-    .lists ul{
+        background-color: #081320; */
+        /* background-color: transparent; */
+    
+    /* .lists ul{
         display: block;
-        margin: 0 auto;
+        text-align: center;
         height: 75vh;
-        width: 100%;
-        transition: 4s ease;
-        
-    }
-    .lists a{
+        width: 100%;    
+    } */
+    /* .lists a{
         color: #fff;
     
     }
     .lists li{
         margin: 5% 40%;
     }
+    #check:checked ~ .lists{
+        display: none;
+        width: 0;
+        height: 0;
+        
+        
+    }
     .contact-us{
          padding-left: 25%;
-    }
+    } */
     
-  }    
+      
   /* @media only screen and (max-width: 650px) {
     .logo{
         margin-right: 5%;
@@ -535,3 +531,15 @@ Now let's go responsive!!!!
      
   } */
 
+  .lists{
+      display: none;
+  }
+  .contact-us input{
+      width: 80%;
+  }
+  .contact-us{
+      padding-left: 25%;
+  }
+
+
+}
