@@ -1,12 +1,16 @@
-*
-{
+:root{
+    --black: black;
+    --dark: #1b222c;
+}
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
  body
  {
-    font-family: Garamond;
+    /* font-family: Garamond; */
+    font-family: Verdana;
     width: 100%;
     opacity: 1;
     background-color:#c4ceda;
@@ -17,12 +21,11 @@
     flex-direction: row;
     width: 100%;
     position: fixed;
+    color: var(--dark);
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     box-shadow: 2px 3px 3px grey;
-    
-
 }
 .title{
     display: flex;
@@ -43,6 +46,17 @@
 }
 .title a{
     margin: 1%;
+}
+.hamburger{
+    background-color:#1b222c;
+    border-radius: 5px;
+    width: 13%;
+    height: 20%;
+}
+.line{
+    width:5%;
+    background-color: #1b222c;
+    height: 10%;
 }
 .lists{
     /* border: 2px solid red; */
@@ -173,14 +187,14 @@ var
     width: 24%;
     padding-bottom: 5%;
     background-color:#2c3541;
-    box-shadow: 2px 1px 1px 2px white;  
-    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px grey;  
+    border-radius: 20px;
 }
 .resume h1
 {
     background-color:#fff;
-    width: 32px;
-    height: 30px;
+    width: 25px;
+    height: 28px;
     text-align: center;
     margin: 10px auto;
     padding-bottom: 5px;
@@ -272,27 +286,23 @@ var
 }
 .contact-us
 {
-    
     padding: 2% 0;
-    
-    padding-left: 35%;
-    
-    
+    /* border: 2px solid black; */
+    padding-left: 30%;
 }
 .contact-us input
 {
     width: 60%;
-    margin: 1%;
+    margin: 1.5% 0;
     border-radius: 5px;
+    border: none;
     padding: 1.5% 3%;
     color:#6d6e70;
-    
-  
-    
+    outline: none;
 }
 button
 {
-    background-color: #19222d;
+    background-color: #353b41;
     color:#fff;
     border-radius: 5px;
     border: transparent;
@@ -306,9 +316,7 @@ button
 }
 button:hover
 {
-    color: #1d252e;
-    background-color: #8a9eb6;
-    font-weight: bold;
+    opacity: 0.7;
 }
 .footer
 {
@@ -345,6 +353,9 @@ Now let's go responsive!!!!
    .about-me{
        display: flex;
        flex-direction: column;
+       margin: 0;
+       box-shadow: 0;
+       border-radius: 0;
 
    }
    .about-me-image{
