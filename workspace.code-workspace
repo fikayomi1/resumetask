@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../New Web Code"
+		},
+		{
+			"path": "../IT Software Project"
+		},
+		{
+			"path": "../Responsive Navigation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web code"
+	}
+}
